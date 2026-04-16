@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트 외출 도우미</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+    <header class="header">
+        <h1>스마트 외출 도우미</h1>
+        <p>날씨와 외출 준비를 채팅으로 물어보세요.</p>
+    </header>
+
+    <main class="chat-wrapper">
+        <div id="chat-box" class="chat-box">
+            <div class="message assistant">
+                <div class="bubble">
+                    안녕하세요. 지역을 포함해서 날씨나 외출 준비를 물어보세요. 예: 서울 날씨 어때?
+                </div>
+            </div>
+        </div>
+
+        <div class="input-panel">
+            <textarea id="message-input" placeholder="메시지를 입력하세요."></textarea>
+            <div class="controls">
+                <button id="send-button">전송</button>
+                <button id="record-button">녹음 시작</button>
+                <button id="clear-button">대화 초기화</button>
+            </div>
+            <p id="status-text" class="status-text">대기 중</p>
+        </div>
+    </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
